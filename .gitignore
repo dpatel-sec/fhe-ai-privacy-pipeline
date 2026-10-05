@@ -1,0 +1,23 @@
+# Python environments and generated files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Downloaded Hugging Face models and caches
+.hf_cache/
+local_model/
+*.safetensors
+
+# Locally compiled OpenFHE artifacts
+openfhe-development/
+openfhe-python/
+openfhe-build/
+openfhe-install/
+openfhe-python-build*/
+openfhe-python-package/
+
+# Operating-system and editor files
+.DS_Store
+.vscode/
+.idea/

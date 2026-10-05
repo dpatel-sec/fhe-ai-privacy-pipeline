@@ -1,0 +1,149 @@
+{
+  "arithmetic_benchmark": {
+    "plaintext": {
+      "vector_a": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "vector_b": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "add_result": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "mul_result": [
+        8,
+        14,
+        18,
+        20,
+        20,
+        18,
+        14,
+        8
+      ],
+      "avg_add_ms": 0.000226,
+      "avg_mul_ms": 0.000214
+    },
+    "fhe": {
+      "encrypted_add_result": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "encrypted_mul_result": [
+        8,
+        14,
+        18,
+        20,
+        20,
+        18,
+        14,
+        8
+      ],
+      "encryption_ms": 4.592,
+      "eval_add_ms": 0.066,
+      "eval_mul_ms": 3.869,
+      "decryption_ms": 0.693,
+      "add_overhead_x": 291.45,
+      "mul_overhead_x": 18092.71
+    }
+  },
+  "encrypted_retrieval": {
+    "feature_vocab": [
+      "privacy",
+      "prompt",
+      "federated",
+      "learning",
+      "updates",
+      "bootstrapping",
+      "latency",
+      "memory"
+    ],
+    "query_text": "How does FHE help with privacy-preserving prompt processing for AI systems?",
+    "query_vector": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "reference_vectors": [
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "plaintext_scores": [
+      2,
+      0,
+      0
+    ],
+    "encrypted_scores": [
+      2,
+      0,
+      0
+    ],
+    "avg_encrypted_eval_ms": 6.614,
+    "selected_reference_index": 0,
+    "selected_reference_text": "Encrypted prompt processing lets a cloud service run useful computations without ever seeing the user prompt in plaintext."
+  },
+  "llm_demo": {
+    "model_id": "distilgpt2",
+    "prompt": "Context: Encrypted prompt processing lets a cloud service run useful computations without ever seeing the user prompt in plaintext.\nQuestion: Explain in one short sentence how this supports privacy-preserving AI.\nAnswer:",
+    "generated_text": "Encrypted prompt processing lets a cloud service run useful computations without ever seeing the user prompt in plain"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "pipeline": "client encrypts input -> server runs encrypted inference -> client decrypts encrypted output",
+  "query_text": "How can FHE protect a user's private prompt while an external AI service still processes it?",
+  "feature_vocab": [
+    "privacy",
+    "prompt",
+    "federated",
+    "learning",
+    "updates",
+    "bootstrapping",
+    "latency",
+    "memory"
+  ],
+  "client_feature_vector": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "model_weights": {
+    "private_prompt_processing": [
+      3,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "secure_federated_learning": [
+      1,
+      0,
+      4,
+      4,
+      3,
+      0,
+      0,
+      0
+    ],
+    "llm_scalability_limits": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      4,
+      4
+    ]
+  },
+  "server_runtime_ms": {
+    "private_prompt_processing": 2.691,
+    "secure_federated_learning": 2.353,
+    "llm_scalability_limits": 2.311
+  },
+  "client_encryption_ms": 2.248,
+  "client_decryption_ms": 0.864,
+  "decrypted_scores": {
+    "private_prompt_processing": 4,
+    "secure_federated_learning": 0,
+    "llm_scalability_limits": 0
+  },
+  "predicted_label": "private_prompt_processing"
+}

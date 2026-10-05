@@ -1,0 +1,6 @@
+# Install OpenFHE separately; its installation differs between Linux and macOS.
+# See docs/INSTALL_OPENFHE.md.
+numpy>=1.26
+torch>=2.2
+transformers>=4.47
+safetensors>=0.4

@@ -1,0 +1,9 @@
+FHE benchmark summary
+Plaintext add avg (ms): 0.000226
+Plaintext mul avg (ms): 0.000214
+Encrypted add (ms): 0.066
+Encrypted mul (ms): 3.869
+Selected encrypted reference index: 0
+Selected encrypted reference text: Encrypted prompt processing lets a cloud service run useful computations without ever seeing the user prompt in plaintext.
+HF model: distilgpt2
+HF output: Encrypted prompt processing lets a cloud service run useful computations without ever seeing the user prompt in plain
